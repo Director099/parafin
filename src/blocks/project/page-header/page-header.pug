@@ -1,0 +1,13 @@
+mixin page-header(mod)
+  .page-header(class= mod)
+    .page-header__nav
+      button.page-header__btn Каталог продукции
+      ul.page-header__list-nav
+        li.page-header__list-item
+          a.page-header__list-link(href="#about") О компании
+        li.page-header__list-item
+          a.page-header__list-link(href="#contact") Контакты
+    a.logo.page-header__logo(href="index.html") ООО «ПВ ТОРГ»
+    .contact-header
+      a.contact-header__tel(href="tel:+7(347)266-93-15") +7 (347) 266-93-15
+      a.contact-header__call(href="#callback") оформить заказ

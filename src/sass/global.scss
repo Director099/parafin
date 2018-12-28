@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 700 $fz $main-font;
+  color: $text-color;
+}
+
+a {
+  cursor: pointer;
+  transition: $time;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button {
+  transition: $time;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}

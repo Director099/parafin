@@ -1,0 +1,14 @@
+.fullpage {
+  background: url("../img/decor/bg-fullpage.jpg") no-repeat top center / cover;
+  // padding-bottom: 40px;
+
+  @media(min-width: $screen-xl) {
+    min-height: 770px;
+    // height: 100vh;
+  }
+}
+
+.fullpage__container {
+  position: relative;
+  height: 100%;
+}
