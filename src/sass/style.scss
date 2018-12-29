@@ -9,6 +9,7 @@
 @import "../../node_modules/bootstrap/scss/transitions";
 @import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules/bootstrap/scss/reboot";
 // @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
 // @import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
 // @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
@@ -25,9 +26,14 @@
 @import "global";
 
 @import "../blocks/companents/title/title";
+@import "../blocks/companents/logo/logo";
+@import "../blocks/companents/btn/btn";
 
 @import "../blocks/project/page-header/page-header";
 @import "../blocks/project/fullpage/fullpage";
 @import "../blocks/project/menu/menu";
 @import "../blocks/project/main-block/main-block";
 @import "../blocks/project/page-footer/page-footer";
+@import "../blocks/project/contact-header/contact-header";
+@import "../blocks/project/container/container";
+

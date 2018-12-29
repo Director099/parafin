@@ -1,6 +1,8 @@
 .page-header {
   padding-top: 30px;
   padding-bottom: 87px;
+  margin-left: -100px;
+  margin-right: -100px;
 }
 
 .page-header {
@@ -13,8 +15,13 @@
   }
 
   @media(min-width: $screen-md) {
-    align-items: center;
+    // align-items: center;
   }
+}
+
+.page-header__nav {
+  display: flex;
+  align-items: center;
 }
 
 // .page-header__logo {
@@ -86,6 +93,7 @@
 .page-header__list-link {
   color: $white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 300;
   padding: 10px 14px;
 }

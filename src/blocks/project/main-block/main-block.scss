@@ -1,5 +1,5 @@
 .main-block {
-  max-width: 350px;
+  max-width: 544px;
 
   &--width {
     max-width: 100%;
@@ -7,16 +7,16 @@
 }
 
 .main-block__title {
-  font: 400 32px $main-font;
+  font: 700 32px $main-font;
   color: $white;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
 
   &--ident {
     margin-bottom: 5px;
   }
 
   @media(min-width: $screen-lg) {
-    font-size: 52px;
+    font-size: 60px;
   }
 }
 
@@ -34,8 +34,9 @@
 }
 
 .main-block__tagline {
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 44px;
+  font-weight: 300;
+  line-height: 63px;
   margin-bottom: 67px;
   color: $white;
 }
