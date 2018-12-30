@@ -7,9 +7,20 @@
 }
 
 .main-block__title {
+  position: relative;
   font: 700 32px $main-font;
   color: $white;
   margin-bottom: 2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -96px;
+    top: 39px;
+    width: 68px;
+    height: 1px;
+    background-color: #dfb47c;
+  }
 
   &--ident {
     margin-bottom: 5px;
@@ -37,7 +48,7 @@
   font-size: 44px;
   font-weight: 300;
   line-height: 63px;
-  margin-bottom: 67px;
+  margin-bottom: 65px;
   color: $white;
 }
 

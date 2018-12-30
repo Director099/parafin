@@ -9,16 +9,47 @@ block header
       +page-header()
       section.main-block
         h1.main-block__title Прямой поставщик
-        p.main-block__tagline Технического парафина &laquo;Т-2&raquo; и&nbsp;защитного воска &laquo;ЗВ-П&raquo; с&nbsp;завода-производителя
-        form.form-callback
-          label.form-doc.form-doc--tel.form-callback__mb-tel
-            input.form-doc__input(type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required="")
-          button.btn.btn--warning.form-callback__btn Обсудить заказ
+        p.main-block__tagline технического парафина &laquo;Т-2&raquo; и&nbsp;защитного воска &laquo;ЗВ-П&raquo; с&nbsp;завода-производителя
+        form.form
+          .form__row
+            label.field-text.form__field-width
+              input.field-text__input.field-text__input--tel(type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required="")
+            button.btn.btn--warning Обсудить заказ
           label.form-checkbox
             input(type="checkbox" required="" checked)
             span.form-checkbox__check(aria-label="Согласие на обработку данных")
             span.form-checkbox__text Я&nbsp;даю свое согласие на&nbsp;обработку персональных данных
 block content
   main
+    .description(id="description")
+      section.container
+        h2.title.description__title Бесперебойная доставка продукции в&nbsp;заводской упаковке любого объема
+        .row.description__ident
+          .description__content
+            p Текст о компании. Lorem Ipsum является текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета и визуальных макетах.
+            p Проход продолжает видеть частое использование, с Lorem Ipsum текст часто появляются в печати, графических и веб-дизайна
+            p Текст о компании. Lorem Ipsum является текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета и визуальных макетах. Проход продолжает видеть частое
+          .col-lg-6
+            .block-img
+              img.block-img__one(src="img/img-2.jpg" alt="Изображение")
+        ul.advantages
+          li.advantages__column
+            .advantages__item.advantages__item--icon-1
+              p.advantages__text Прямой поставщик Завод «Башнефть новойл»
+          li.advantages__column
+            .advantages__item.advantages__item--icon-2
+              p.advantages__text Индивидуальная цена при объеме от 10 тонн
+          li.advantages__column
+            .advantages__item.advantages__item--icon-3
+              p.advantages__text Удобная логистика, расположение складов
+          li.advantages__column
+            .advantages__item.advantages__item--icon-4
+              p.advantages__text Отгрузка продукции за чертой города (промзона)
+    .popular
+      .container
+        h2.title.title--white Популярные товары
+        ul.popular__list
+          li.popular__item
+
 block footer
   +page-footer()

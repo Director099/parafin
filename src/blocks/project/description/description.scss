@@ -1,0 +1,26 @@
+.description {
+  padding-top: 82px;
+  padding-bottom: 92px;
+}
+
+.description__ident {
+  margin-bottom: 60px;
+}
+
+.description__title {
+  max-width: 640px;
+  margin-bottom: 46px;
+}
+
+.description__content {
+  @include make-col-ready();
+  max-width: 445px;
+}
+
+.description__content p {
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

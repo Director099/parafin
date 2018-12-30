@@ -3,21 +3,29 @@
   text-align: right;
   // margin-left: auto;
   // z-index: 1;
+  margin-top: 9px;
 }
 
 .contact-header__list {
   @include ul-none();
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   display: flex;
+  align-items: center;
 }
 
 .contact-header__item {
+  position: relative;
+
   &::after {
-    content: "/";
+    content: "";
     display: inline-block;
-    padding-right: 10px;
-    padding-left: 10px;
-    color: #919eaf;
+    vertical-align: bottom;
+    width: 1px;
+    height: 27px;
+    transform: rotate(18deg);
+    margin-right: 16px;
+    margin-left: 17px;
+    background: #919eaf;
   }
 
   &:last-child::after {

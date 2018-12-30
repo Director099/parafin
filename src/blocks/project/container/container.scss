@@ -1,8 +1,9 @@
 // $grid-gutter-width: 100px;
 
 .container {
+  padding-left: 100px;
+  padding-right: 100px;
   @include media-breakpoint-up(xl) {
-    padding-left: 100px;
-    padding-right: 100px;
+
   }
 }
