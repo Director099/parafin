@@ -40,6 +40,12 @@
   text-decoration: none;
   color: $white;
 
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #e1b57d;
+  }
+
   &--black {
     color: $black;
   }
@@ -56,6 +62,12 @@
   font-weight: 300;
   color: #ccd6e4;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #e1b57d;
+  }
 
   @media(min-width: $screen-sm) {
     font-size: 14px;

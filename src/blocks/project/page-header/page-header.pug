@@ -1,7 +1,9 @@
 mixin page-header(mod)
-  .page-header(class= mod)
+  header.page-header(class= mod)
+    +menu()
     .page-header__nav
-      button.page-header__btn Каталог продукции
+      .page-header__catalog
+        button.page-header__btn Каталог продукции
       ul.page-header__list-nav
         li.page-header__list-item
           a.page-header__list-link(href="#about") О компании

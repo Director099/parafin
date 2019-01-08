@@ -10,9 +10,10 @@
 @import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "../../node_modules/bootstrap/scss/reboot";
-// @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
-// @import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
-// @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
 // My style
 
@@ -31,6 +32,10 @@
 @import "../blocks/companents/field-text/field-text";
 @import "../blocks/companents/form/form";
 @import "../blocks/companents/form-checkbox/form-checkbox";
+@import "../blocks/companents/breadcrumbs/breadcrumbs";
+@import "../blocks/companents/pagination/pagination";
+@import "../blocks/companents/table/table";
+@import "../blocks/companents/modal/modal";
 
 @import "../blocks/project/page-header/page-header";
 @import "../blocks/project/fullpage/fullpage";
@@ -41,4 +46,13 @@
 @import "../blocks/project/container/container";
 @import "../blocks/project/advantages/advantages";
 @import "../blocks/project/description/description";
-
+@import "../blocks/project/popular/popular";
+@import "../blocks/project/product/product";
+@import "../blocks/project/category/category";
+@import "../blocks/project/sertificats/sertificats";
+@import "../blocks/project/callback/callback";
+@import "../blocks/project/developer/developer";
+@import "../blocks/project/contact-info/contact-info";
+@import "../blocks/project/price-list/price-list";
+@import "../blocks/project/merchandise/merchandise";
+@import "../blocks/project/menu/menu";

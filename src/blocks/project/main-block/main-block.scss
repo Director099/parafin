@@ -1,5 +1,5 @@
 .main-block {
-  max-width: 544px;
+  max-width: 559px;
 
   &--width {
     max-width: 100%;
@@ -29,6 +29,17 @@
   @media(min-width: $screen-lg) {
     font-size: 60px;
   }
+
+  &--size {
+    @media(min-width: $screen-lg) {
+      font-size: 48px;
+
+      &::before {
+        left: -96px;
+        top: 31px;
+      }
+    }
+  }
 }
 
 .main-block__title span {
@@ -50,6 +61,15 @@
   line-height: 63px;
   margin-bottom: 65px;
   color: $white;
+
+  &--size {
+    font-size: 32px;
+    line-height: 52px;
+  }
+}
+
+.main-block__tagline span {
+  display: block;
 }
 
 .main-block__tagline-ident {

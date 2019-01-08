@@ -1,0 +1,26 @@
+mixin callback()
+  .callback
+    .container
+      .callback__row
+        section.callback__content
+          h2.title.title--line.title--white.callback__title Готовы обсудить заказ на&nbsp;индивидуальных условиях
+          p.callback__text Оставь заявку через сайт или #[a(href="https://wa.me/79649514513", target="_blank") WhatsApp]
+        .callback__form
+          form.form
+            .form__row.callback__form-row
+              .callback__column-field
+                label.field-text.form__field
+                  input.field-text__input.field-text__input--name(type="name" name="name" placeholder="Ваше имя" required="")
+              .callback__column-field
+                label.field-text.form__field
+                  input.field-text__input.field-text__input--tel(type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required="")
+            label.field-text
+              textarea.field-text__input.field-text__input--message(name="message" placeholder="Опишите условия заказа" required="")
+            .form__row.form__row--center.callback__form-row
+              .callback__column-field
+                button.btn.btn--warning.form__btn-cb Обсудить заказ
+              .callback__column-field
+                label.form-checkbox.form-checkbox--lh
+                  input(type="checkbox" required="" checked)
+                  span.form-checkbox__check(aria-label="Согласие на обработку данных")
+                  span.form-checkbox__text Я&nbsp;даю свое согласие на&nbsp;обработку персональных данных

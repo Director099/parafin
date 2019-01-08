@@ -1,9 +1,25 @@
 // $grid-gutter-width: 100px;
 
-.container {
+.container--xxl {
   padding-left: 100px;
   padding-right: 100px;
-  @include media-breakpoint-up(xl) {
 
+  @include media-breakpoint-up(xl) {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 1370px;
+  }
+}
+
+.container--slider {
+
+  max-width: 735px;
+
+  @include media-breakpoint-up(xl) {
+    max-width: 1230px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 990px;
   }
 }

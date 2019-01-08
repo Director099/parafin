@@ -11,39 +11,57 @@ $border-color:                hsl(0, 0%, 60%) !default;
   $block-name:                &; // #{$block-name}__element
 
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
 
-  &__item {
-    display: block;
-    padding: 0.5rem;
-    min-width: 2.5rem;
-    border: 1px solid $border-color;
+
+.pagination__item {
+  display: block;
+  padding: 3px;
+  min-width: 34px;
+  border-radius: 5px;
+  border: 1px solid #777777;
+  text-decoration: none;
+  text-align: center;
+  color: #777777;
+  margin: 4px;
+
+  &:hover,
+  &:focus {
     text-decoration: none;
-    text-align: center;
     color: $text-color;
+  }
 
-    & + & {
-      border-left: 0;
-    }
+  &--active {
+    color: $white;
+    border: 1px solid #e0b47c;
+    background: linear-gradient(-28deg, #bb9968 0%, #bb9968 1%, #e6b980 100%);
+  }
 
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: $text-color;
-    }
+  &--arrow-prev {
+    border: 1px solid #e0b47c;
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:
+      url("../img/icon/icon-arrow-prev.svg"),
+      linear-gradient(-28deg, #bb9968 0%, #bb9968 1%, #e6b980 100%);
+  }
 
-    @at-root a#{&} {
+  &--arrow-next {
+    border: 1px solid #e0b47c;
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:
+      url("../img/icon/icon-arrow-next.svg"),
+      linear-gradient(-28deg, #bb9968 0%, #bb9968 1%, #e6b980 100%);
+  }
 
-      &:hover,
-      &:focus {
-        background-color: $gray-lightest;
-      }
-    }
-
-    &--active {
-      background-color: $gray-lightest;
-    }
+  @include media-breakpoint-up(sm) {
+    margin: 5px 14px;
   }
 }

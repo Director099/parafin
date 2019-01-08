@@ -1,0 +1,58 @@
+extends pug/layout.pug
+
+block meta
+  title Технический парафин «Т-2»
+block header
+  .fullpage.fullpage--none
+    .container.container--xxl
+      +page-header("page-header--single")
+block content
+  main
+    .container
+      +breadcrumbs()
+        +breadcrumbs-item('Главная', '/index.html')
+        +breadcrumbs-item('Название категории', '/category.html')
+        +breadcrumbs-item('Технический парафин "Т2"')
+      .merchandise
+        .merchandise__row
+          .merchandise__picture
+            img(src="img/content/tovar-5.jpg", alt="Технический парафин «Т-2»")
+          .merchandise__content
+            .merchandise__row.merchandise__row--ident
+              section.merchandise__left
+                h1.merchandise__title Технический парафин «Т-2»
+                p.merchandise__price От #[span 74 000] за тонну
+                span.merchandise__packing Варианты фасовки:
+                ul.merchandise__packing-list
+                  li.merchandise__packing-item
+                    p.merchandise__packing-text 22,50 #[sub кг.]
+                  li.merchandise__packing-item
+                    p.merchandise__packing-text 15-16 #[sub кг.]
+                p.merchandise__manufact Производитель: «Башнефть новойл»
+                button.btn.btn--warning.merchandise__btn Заказать
+              section.merchandise__right
+                h3.merchandise__char-title Характеристики парафина технического
+                +table()
+                  thead
+                    tr
+                      th Наименование показателей
+                      th Норма по ГОСТ
+                  tr
+                    td Температура плавления, 0С .
+                    td 52,0 - 58,0
+                  tr
+                    td Массовая доля масла, %, не более
+                    td 1,80
+                  tr
+                    td Цвет, условные марки, не более
+                    td 11
+                  tr
+                    td Содержание водорастворимых кислот и щелочей
+                    td отсутствие
+                  tr
+                    td Содержание механических примесей
+                    td отсутствие
+
+            p.merchandise__desck Парафин – подобная воску плотная полупрозрачная белая/желтоватая смесь предельных углеводородов, которые в большинстве своем имеют нормальное строение состава. Вкус и запах отсутствуют, на ощупь немного жирная. В воде и спирте не растворяется. Формировать ее могут алканы от октадекана (С18Н38) до пентатриоконтана (С35Н72). В зависимости от соотношения количеств тяжелых и легких углеводородов парафин может иметь жидкое, твердое и
+block footer
+  +page-footer()

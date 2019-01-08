@@ -28,7 +28,7 @@ $gradient-warning:            linear-gradient(-28deg, #bb9968 0%, #bb9968 1%, #e
   color: $text-color;
   border-radius: 10px;
   border: none;
-  background-color: $gray-300;
+  background-color: $gray-lighter;
   // background-image: none;
   cursor: pointer;
 
@@ -40,16 +40,16 @@ $gradient-warning:            linear-gradient(-28deg, #bb9968 0%, #bb9968 1%, #e
     // border-color: darken($gray-lighter, 12%);
   }
 
-  &:visited {
-    color: $text-color;
-  }
+  // &:visited {
+  //   color: $text-color;
+  // }
 
   &--disabled,
   &:disabled {
-    // opacity: 0.6;
+    opacity: 0.6;
     cursor: not-allowed;
     color: $text-color;
-    background-color: $gray-300;
+    background-color: $gray-lighter;
     // border-color: $gray-lighter;
   }
 
@@ -62,6 +62,30 @@ $gradient-warning:            linear-gradient(-28deg, #bb9968 0%, #bb9968 1%, #e
   &--warning {
     color: $white;
     background-image: $gradient-warning;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $white;
+      // background-color: darken($gray-lightest, 10%);
+      // border-color: darken($gray-lighter, 12%);
+    }
+  }
+
+  &--transparent {
+    font-size: 16px;
+    font-weight: 400;
+    color: #e7bb83;
+    border: 1px solid #e7bb83;
+    background: transparent;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: #e7bb83;
+      // background-color: darken($gray-lightest, 10%);
+      // border-color: darken($gray-lighter, 12%);
+    }
   }
 
   // &--main {

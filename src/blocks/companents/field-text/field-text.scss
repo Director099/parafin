@@ -1,6 +1,7 @@
 .field-text {
   display: block;
-  margin-bottom: 1rem;
+  width: 100%;
+  margin-bottom: 13px;
 
   &__name {
     // @include field-name;
@@ -28,11 +29,12 @@
     }
 
     &--name {
-
+      background: $white url("../img/icon/icon-user.svg") no-repeat 23px 50%;
     }
 
     &--message {
-
+      background: $white url("../img/icon/icon-message.svg") no-repeat 20px 18px;
+      min-height: 102px;
     }
 
     &[disabled],

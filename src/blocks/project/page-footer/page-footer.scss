@@ -1,0 +1,79 @@
+.page-footer {
+  padding-top: 89px;
+  padding-bottom: 14px;
+  background: #1d2127;
+}
+
+.page-footer__row {
+  @include ul-none();
+  @include make-row();
+  padding-bottom: 32px;
+}
+
+.page-footer__item {
+  @include make-col-ready();
+  margin-bottom: 50px;
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.page-footer__logo {
+  margin-top: 6px;
+  @include media-breakpoint-up(sm) {
+    @include make-col(6)
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(3);
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 372px;
+  }
+}
+
+.page-footer__address {
+  @include media-breakpoint-up(sm) {
+    @include make-col(6)
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(3);
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 302px;
+  }
+}
+
+.page-footer__phones {
+  @include media-breakpoint-up(sm) {
+    @include make-col(6)
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(3);
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 301px;
+  }
+}
+
+.page-footer__post {
+  @include media-breakpoint-up(sm) {
+    @include make-col(6)
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(3);
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 222px;
+  }
+}

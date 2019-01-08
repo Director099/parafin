@@ -1,0 +1,30 @@
+.price-list {
+  position: relative;
+}
+
+.price-list__btn {
+  position: absolute;
+  bottom: 58px;
+  right: 0;
+  padding: 12px 19px 13px 51px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 23px;
+    height: 20px;
+    background: url("../img/icon/icon-download.svg") no-repeat center / contain;
+  }
+}
+
+.price-list__img {
+  display: block;
+  margin-left: auto;
+  margin-top: -26px;
+}

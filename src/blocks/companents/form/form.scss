@@ -6,6 +6,10 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 28px;
+
+  &--center {
+    align-items: center;
+  }
 }
 
 .form__field-width {
@@ -23,6 +27,19 @@
 
   &:not(:last-child) {
     margin-bottom: 1rem;
+  }
+}
+
+.form__field {
+  margin-bottom: 15px;
+}
+
+.form__btn-cb {
+  width: 100%;
+  margin-bottom: 15px;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 0;
   }
 }
 
