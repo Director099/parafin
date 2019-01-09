@@ -17,6 +17,7 @@
 
   @include media-breakpoint-up(md) {
     max-width: 300px;
+    flex-shrink: 0;
   }
 }
 

@@ -1,12 +1,35 @@
 'use strict';
 
-$(function () {
-    $.scrollUp({
-        scrollText: '',
-    });
-});
+// $(function () {
+//     $.scrollUp({
+//         scrollText: '',
+//     });
+// });
 
 $('input[type=tel]').mask("+7 (000) 000 00 00");
+
+$(document).ready(function() {
+    var windowWidth = $(window).width();
+    if (windowWidth < 768) {
+        $('.menu__navigation-link--none-xl').click(function(evt) {
+            $(evt.target).toggleClass("active")
+            $(this).siblings(".menu__navigation-drop").slideToggle("slow");
+            return false;
+        });
+    }
+
+    if (windowWidth < 992) {
+      $('.contact-header').click(function(evt) {
+          $("body").css("overflow", "hidden");
+          $(".modal-phone").fadeIn();
+      });
+
+      $(".modal-phone__close").on("click", function() {
+        $(".modal-phone").fadeOut();
+        $("body").css("overflow", "auto");
+      })
+    }
+});
 
 // Плавный скол с навигации
 function scroll(element) {
@@ -19,8 +42,6 @@ function scroll(element) {
 }
 
 scroll($(".page-header__list-link"))
-// scroll($(".scroll-down"))
-// scroll($(".page-header__list-link"))
 
 // Плавный скол с навигации
 

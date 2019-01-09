@@ -1,14 +1,29 @@
 .page-header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  padding-top: 32px;
-  padding-bottom: 126px;
-  margin-left: -100px;
-  margin-right: -100px;
+  padding-top: 20px;
+  padding-bottom: 87px;
+  // margin-left: -100px;
+  // margin-right: -100px;
+
+  @media(min-width: $screen-md) {
+    padding-top: 32px;
+    padding-bottom: 86px;
+  }
+
+  @media(min-width: $screen-lg) {
+    align-items: flex-start;
+    margin-left: -100px;
+    margin-right: -100px;
+    padding-bottom: 126px;
+  }
 
   &--pb {
-    padding-bottom: 43px;
+
+    @media(min-width: $screen-lg) {
+      padding-bottom: 43px;
+    }
   }
 
   &--ident {
@@ -16,34 +31,45 @@
   }
 
   &--single {
-    padding-top: 43px;
+    padding-top: 20px;
     padding-bottom: 32px;
-  }
 
-  @media(min-width: $screen-md) {
-    // align-items: center;
+    @media(min-width: $screen-md) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    @media(min-width: $screen-lg) {
+      padding-top: 43px;
+      padding-bottom: 32px;
+    }
   }
 }
 
 .page-header__catalog {
   position: relative;
-  margin-right: 13px;
+
+
+  @media(min-width: $screen-lg) {
+    margin-right: 13px;
+  }
 }
 
 .page-header__nav {
   display: flex;
   align-items: center;
+  order: 3;
+
+  @media(min-width: $screen-md) {
+    order: 1;
+  }
 }
 
 .page-header__logo {
   align-self: center;
   // display: block;
   // max-width: 100px;
-
-  // @media(min-width: $screen-sm) {
-  //   max-width: 100%;
-  //   margin-right: 70px;
-  // }
+  order: 2;
 }
 
 .page-header__btn {
@@ -52,13 +78,24 @@
   padding: 0;
   background: transparent;
   width: 24px;
-  height: 24px;
+  height: 13px;
   border: none;
-  margin-left: 20px;
   transition: $time;
-  order: 3;
 
-  @media(min-width: $screen-md) {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 47%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    transition: $time;
+    background: $color-warning;
+    box-shadow: 0 6px 0 0 $color-warning, 0 -6px 0 0 $color-warning;
+  }
+
+  @media(min-width: $screen-lg) {
     width: auto;
     height: auto;
     order: 0;
@@ -70,15 +107,9 @@
     border: 1px solid #dbb17a;
 
     &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 47%;
       left: 16px;
       width: 15px;
       height: 1px;
-      transition: $time;
-      background: $color-warning;
       box-shadow: 0 4px 0 0 $color-warning, 0 -4px 0 0 $color-warning;
     }
 

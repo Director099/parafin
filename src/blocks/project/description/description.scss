@@ -1,10 +1,14 @@
 .description {
   padding-top: 82px;
-  padding-bottom: 92px;
+  padding-bottom: 42px;
   overflow: hidden;
 
   &--category {
     padding-top: 66px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 92px;
   }
 }
 

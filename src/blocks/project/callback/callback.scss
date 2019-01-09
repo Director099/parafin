@@ -38,6 +38,7 @@
 
 .callback__text {
   font-size: 22px;
+  line-height: 36px;
   font-weight: 400;
   color: $white;
 }
@@ -54,7 +55,8 @@
     content: "";
     position: absolute;
     left: 1px;
-    top: 2px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 24px;
     height: 24px;
     background: url("../img/icon/icon-whatsapp.svg") no-repeat center / contain;

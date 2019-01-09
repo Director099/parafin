@@ -15,8 +15,13 @@
 .form__field-width {
   max-width: 287px;
   width: 100%;
-  margin-right: 10px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
 }
 
 .form__fieldset {

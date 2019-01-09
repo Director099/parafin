@@ -1,10 +1,14 @@
 .price-list {
   position: relative;
+  margin-top: 40px;
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 0;
+  }
 }
 
 .price-list__btn {
-  position: absolute;
-  bottom: 58px;
+  position: relative;
   right: 0;
   padding: 12px 19px 13px 51px;
   font-size: 18px;
@@ -21,10 +25,18 @@
     height: 20px;
     background: url("../img/icon/icon-download.svg") no-repeat center / contain;
   }
+
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    bottom: 58px;
+  }
 }
 
 .price-list__img {
   display: block;
-  margin-left: auto;
-  margin-top: -26px;
+
+  @include media-breakpoint-up(xl) {
+    margin-left: auto;
+    margin-top: -26px;
+  }
 }

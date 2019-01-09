@@ -1,6 +1,7 @@
 mixin page-header(mod)
   header.page-header(class= mod)
     +menu()
+    +modal-phone()
     .page-header__nav
       .page-header__catalog
         button.page-header__btn Каталог продукции
@@ -10,7 +11,7 @@ mixin page-header(mod)
         li.page-header__list-item
           a.page-header__list-link(href="#contact") Контакты
     a.logo.page-header__logo(href="index.html") ООО «ПВ ТОРГ»
-    .contact-header
+    .contact-header(aria-label="На мобильном устройстве, по нажатию, откроет выбор телефона для звонка")
       ul.contact-header__list
         li.contact-header__item
           a.contact-header__tel(href="tel:+7(917)754-38-83") +7 (917) 754-38-83

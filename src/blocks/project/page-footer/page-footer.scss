@@ -15,9 +15,12 @@
   margin-bottom: 50px;
   text-align: center;
 
+  @include media-breakpoint-up(sm) {
+    text-align: left;
+  }
+
   @include media-breakpoint-up(lg) {
     margin-bottom: 0;
-    text-align: left;
   }
 }
 

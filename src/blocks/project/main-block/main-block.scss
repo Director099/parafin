@@ -4,6 +4,24 @@
   &--width {
     max-width: 100%;
   }
+
+  &--404 {
+    text-align: center;
+    margin: 0 auto;
+
+    .main-block__tagline {
+      font-size: 32px;
+
+      @media(min-width: $screen-lg) {
+        font-size: 52px;
+      }
+    }
+
+    @media(min-width: $screen-lg) {
+      text-align: left;
+      margin: 0;
+    }
+  }
 }
 
 .main-block__title {
@@ -12,15 +30,7 @@
   color: $white;
   margin-bottom: 2px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: -96px;
-    top: 39px;
-    width: 68px;
-    height: 1px;
-    background-color: #dfb47c;
-  }
+
 
   &--ident {
     margin-bottom: 5px;
@@ -28,6 +38,16 @@
 
   @media(min-width: $screen-lg) {
     font-size: 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -96px;
+      top: 39px;
+      width: 68px;
+      height: 1px;
+      background-color: #dfb47c;
+    }
   }
 
   &--size {
@@ -56,15 +76,24 @@
 }
 
 .main-block__tagline {
-  font-size: 44px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 63px;
+  line-height: 32px;
   margin-bottom: 65px;
   color: $white;
 
   &--size {
-    font-size: 32px;
-    line-height: 52px;
+
+
+    @include media-breakpoint-up(lg) {
+      font-size: 32px;
+      line-height: 52px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 44px;
+    line-height: 63px;
   }
 }
 
@@ -74,4 +103,39 @@
 
 .main-block__tagline-ident {
   margin-bottom: 35px;
+}
+
+.main-block__form-row {
+  flex-direction: column;
+  margin-bottom: 15px;
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    margin-bottom: 28px;
+  }
+}
+
+.main-block__form {
+  max-width: 287px;
+
+  @include media-breakpoint-up(sm) {
+    max-width: initial;
+  }
+}
+
+.main-block__form-row .btn {
+  width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    width: auto;
+  }
+}
+
+.main-block__404 {
+  max-width: 288px;
+  width: 100%;
+
+  @media(min-width: $screen-lg) {
+    max-width: 448px;
+  }
 }

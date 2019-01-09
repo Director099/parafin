@@ -13,23 +13,55 @@
 
 .merchandise__picture {
   @include make-col-ready();
-  max-width: 432px;
+  margin-bottom: 30px;
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 420px;
+    flex-basis: 100%;
+  }
+}
+
+.merchandise__picture img {
+  width: 100%;
 }
 
 .merchandise__content {
   @include make-col-ready();
-  max-width: 751px;
   margin-top: -6px;
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 751px;
+    flex-basis: 100%;
+  }
 }
 
 .merchandise__left {
   @include make-col-ready();
-  max-width: 317px;
+  margin-bottom: 30px;
+
+
+  @include media-breakpoint-up(xl) {
+    max-width: 317px;
+    margin-bottom: 0;
+  }
 }
 
 .merchandise__right {
   @include make-col-ready();
-  max-width: 412px;
+
+
+  @include media-breakpoint-up(xl) {
+    max-width: 412px;
+  }
 }
 
 .merchandise__title {

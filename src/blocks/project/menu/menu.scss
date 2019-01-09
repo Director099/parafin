@@ -223,6 +223,10 @@
       pointer-events: auto;
     }
   }
+
+  &:hover {
+    color: #333;
+  }
 }
 
 .menu__contact-header {

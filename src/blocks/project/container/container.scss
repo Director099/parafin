@@ -1,12 +1,15 @@
 // $grid-gutter-width: 100px;
 
 .container--xxl {
-  padding-left: 100px;
-  padding-right: 100px;
+  // padding-left: 100px;
+  // padding-right: 100px;
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(lg) {
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  @include media-breakpoint-up(xl) {
     max-width: 1370px;
   }
 }
