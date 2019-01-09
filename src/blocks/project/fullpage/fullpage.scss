@@ -1,14 +1,52 @@
 .fullpage {
-  background: url("../img/decor/bg-fullpage.jpg") no-repeat top center / cover;
-  // padding-bottom: 40px;
+  background-image:
+    url("../img/decor/bg-fullpage.jpg"),
+    linear-gradient(-66deg, #687e9f 0%, #687e9f 1%, #23272c 100%);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-bottom: 81px;
 
   @media(min-width: $screen-xl) {
-    min-height: 770px;
-    // height: 100vh;
+    min-height: 800px;
+    height: 100vh;
+  }
+
+  &--img-none {
+    height: auto;
+    background-image: linear-gradient(-66deg, #687e9f 0%, #687e9f 1%, #23272c 100%);
+
+    @media(min-width: $screen-xl) {
+     min-height: auto;
+     height: auto;
+    }
+  }
+
+  &--none {
+    background: #23272c;
+    padding: 0;
+    margin-bottom: 39px;
+    height: auto;
+
+    @media(min-width: $screen-xl) {
+      min-height: auto;
+      height: auto;
+    }
+  }
+
+  &--404 {
+    min-height: 100vh;
+    background: #23272c url("../img/decor/bg-404.jpg") no-repeat center / cover;
   }
 }
 
 .fullpage__container {
   position: relative;
   height: 100%;
+}
+
+.fullpage__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

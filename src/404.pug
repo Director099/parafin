@@ -1,0 +1,16 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+block header
+  .fullpage.fullpage--404
+    .container.container--xxl
+      +page-header()
+    .container
+      section.main-block.main-block--404
+        h1.title.title--white.title--404 404
+        p.main-block__tagline страница не найдена
+        a.btn.btn--warning.main-block__404(href="index.html") Перейти на главную страницу
+block content
+
+block footer

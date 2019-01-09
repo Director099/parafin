@@ -11,67 +11,82 @@ $field-padding-vertical:      0.3em !default;
 $field-padding-horizontal:    0.7em !default;
 
 $border-radius:               rem(3px) !default;
+$gradient-warning:            linear-gradient(-28deg, #bb9968 0%, #bb9968 1%, #e6b980 100%), linear-gradient(to top, #f9d219 0%, #fba51d 100%);
 
 .btn {
-
-  $block-name:                &; // #{$block-name}__element
-
-  box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-  padding: $field-padding-vertical  $field-padding-horizontal;
+  padding: 13px 34px 13px;
   white-space: nowrap;
   user-select: none;
   text-align: center;
-  font-size: 1em;
-  font-family: inherit;
-  line-height: $line-height;
+  font-size: 18px;
+  font-weight: 700;
   text-decoration: none;
   text-transform: none;
   color: $text-color;
-  border-radius: $border-radius;
-  border: 1px solid $gray-lighter;
-  background-color: $gray-lightest;
-  background-image: none;
+  border-radius: 10px;
+  border: none;
+  background-color: $gray-lighter;
+  // background-image: none;
   cursor: pointer;
 
   &:hover,
   &:focus {
     text-decoration: none;
     color: $text-color;
-    background-color: darken($gray-lightest, 10%);
-    border-color: darken($gray-lighter, 12%);
+    // background-color: darken($gray-lightest, 10%);
+    // border-color: darken($gray-lighter, 12%);
   }
 
-  &:visited {
-    color: $text-color;
-  }
-
-  &:active,
-  &:focus {
-    @include field-focus;
-  }
+  // &:visited {
+  //   color: $text-color;
+  // }
 
   &--disabled,
   &:disabled {
-    opacity: $opacity;
+    opacity: 0.6;
     cursor: not-allowed;
     color: $text-color;
-    background-color: $gray-lightest;
-    border-color: $gray-lighter;
-
-    @at-root a.btn--disabled {
-      pointer-events: none;
-    }
+    background-color: $gray-lighter;
+    // border-color: $gray-lighter;
   }
+
 
   // &__icon {
   //   display: inline-block;
   //   vertical-align: middle;
   // }
 
+  &--warning {
+    color: $white;
+    background-image: $gradient-warning;
 
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $white;
+      // background-color: darken($gray-lightest, 10%);
+      // border-color: darken($gray-lighter, 12%);
+    }
+  }
+
+  &--transparent {
+    font-size: 16px;
+    font-weight: 400;
+    color: #e7bb83;
+    border: 1px solid #e7bb83;
+    background: transparent;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: #e7bb83;
+      // background-color: darken($gray-lightest, 10%);
+      // border-color: darken($gray-lighter, 12%);
+    }
+  }
 
   // &--main {
   //   color: #fff;

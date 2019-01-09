@@ -1,0 +1,90 @@
+.description {
+  padding-top: 82px;
+  padding-bottom: 42px;
+  overflow: hidden;
+
+  &--category {
+    padding-top: 66px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 92px;
+  }
+}
+
+.description__row {
+  @include make-row();
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+  &--category {
+    margin-bottom: 80px;
+  }
+}
+
+.description__title {
+  max-width: 640px;
+  margin-bottom: 46px;
+}
+
+.description__content {
+  @include make-col-ready();
+  margin-bottom: 50px;
+
+  &--width {
+    // max-width: 569px;
+    @include media-breakpoint-up(lg) {
+      max-width: 569px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 445px;
+    margin-bottom: 0;
+  }
+}
+
+.description__content p {
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.description__img {
+  max-width: 100%;
+  display: block;
+  box-shadow: 0 1px 46px rgba(0, 0, 0, 0.24);
+
+  @include media-breakpoint-up(lg) {
+    margin-left: auto;
+  }
+}
+
+.description__column-img {
+  @include make-col-ready();
+  position: relative;
+  max-width: 750px;
+}
+
+// .description__img-index {
+//   position: absolute;
+//   top: -19px;
+//   right: -75px;
+// }
+
+.description__decor {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -243px;
+    width: 1209px;
+    height: 628px;
+    z-index: -1;
+    background: url("../img/decor/bg-ma-russia.png") no-repeat center / contain;
+  }
+}

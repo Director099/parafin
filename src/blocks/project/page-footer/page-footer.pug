@@ -1,2 +1,47 @@
 mixin page-footer()
-  .page-footer footer
+  +callback()
+  footer.page-footer(id="contact")
+    .container
+      ul.page-footer__row
+        li.page-footer__item.page-footer__logo
+          a.logo(href="index.html") ООО «ПВ ТОРГ»
+        li.page-footer__item.page-footer__address
+          section.contact-info
+            h3.contact-info__title.contact-info__title--address Адрес
+            ul.contact-info__list
+              li.contact-info__item
+                span.contact-info__link Уфа, Пр.Октября 1/2
+        li.page-footer__item.page-footer__phones
+          section.contact-info
+            h3.contact-info__title.contact-info__title--order Отдел заказов:
+            ul.contact-info__list
+              li.contact-info__item
+                a.contact-info__link(href="tel:+7(347)216-36-59") +7 (917) 754-38-83
+              li.contact-info__item
+                a.contact-info__link(href="tel:+7(347)216-36-59") +7 (964) 951-45-13
+              li.contact-info__item
+                a.contact-info__link(href="tel:+7(347)216-36-59") +7 (347) 216-36-59
+        li.page-footer__item.page-footer__post
+          section.contact-info
+            h3.contact-info__title.contact-info__title--request Прием заявок и вопросов:
+            ul.contact-info__list
+              li.contact-info__item
+                a.contact-info__link(href="mailto:info@parafin-vosk.ru") info@parafin-vosk.ru
+      +developer()
+  .modal.fade(id="cost" tabindex="-1" role="dialog")
+    .modal-dialog.modal-dialog-centered(role="document")
+      .modal__content
+        .modal__header
+          h5.modal__title(id="exampleModalCenterTitle") Уточнить стоимость
+          button.modal__close(type="button", data-dismiss="modal", aria-label="Close")
+        .modal__body
+          form.form
+            label.field-text.modal__field
+              input.field-text__input.field-text__input--name(type="text" name="name" placeholder="Ваше имя" required="")
+            label.field-text.modal__field
+              input.field-text__input.field-text__input--tel(type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required="")
+            button.btn.btn--warning.modal__btn Обсудить заказ
+            label.form-checkbox.form-checkbox--lh.modal__checkbox
+              input(type="checkbox" required="" checked)
+              span.form-checkbox__check.form-checkbox__check--border(aria-label="Согласие на обработку данных")
+              span.form-checkbox__text.form-checkbox__text--black Я&nbsp;даю свое согласие на&nbsp;обработку персональных данных

@@ -9,7 +9,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
 $font-size--small:            80% !default;
 
 $field-padding-vertical:      0.3em !default;
-$field-padding-horizontal:    0.7em !default;
+$field-padding-horizontal:    0 !default;
 
 .table {
 
@@ -17,9 +17,9 @@ $field-padding-horizontal:    0.7em !default;
 
   display: block;
   width: 100%;
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
   overflow-x: auto;
-  border: 1px solid $border-color;
+  // border: 1px solid $border-color;
 
   table {
     margin: 0;
@@ -30,13 +30,24 @@ $field-padding-horizontal:    0.7em !default;
 
   td,
   th {
-    padding: $field-padding-vertical $field-padding-horizontal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    padding: 11px 0;
     vertical-align: top;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid #efe6da;
 
-    &:not(:first-child) {
-      border-left: 1px solid $border-color;
+    &:first-child {
+      max-width: 189px;
     }
+
+    &:last-child {
+      border-left: 41px solid $white;
+    }
+
+    // &:not(:first-child) {
+    //   border-left: 41px solid $white;
+    // }
   }
 
   th {

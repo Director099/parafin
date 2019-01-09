@@ -17,15 +17,15 @@ $white:                       hsl(0, 0%, 100%);
 $color-main:                  hsl(208, 98%, 43%);
 $color-success:               hsl(120, 39%, 54%);
 $color-danger:                hsl(2, 64%, 58%);
-$color-warning:               hsl(35, 84%, 62%);
+$color-warning:               #dfb47c;
 
-$text-color:                  $gray-darkest;
+$text-color:                  #353535;
 
 $main-font:                   "PFDin", "Arial", sans-serif;
 
 // Базовая типографика
 
-$fz:                          14px;
+$fz:                          16px;
 $fz--h1:                      2.25em;
 $fz--h2:                      1.875em;
 $fz--h3:                      1.5em;
@@ -35,6 +35,21 @@ $fz--h6:                      1em;
 $fz--small:                   0.75em;
 
 // Ширины
+
+$container-max-widths: (
+  sm: 540px,
+  md: 705px,
+  lg: 960px,
+  xl: 1200px
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
 
 $screen-sm:                   480px;
 $screen-md:                   768px;

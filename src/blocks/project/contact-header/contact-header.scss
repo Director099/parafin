@@ -1,0 +1,100 @@
+.contact-header {
+  position: relative;
+  text-align: right;
+  z-index: 1;
+  width: 24px;
+  height: 19px;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("../img/icon/icon-phone-gr.svg") no-repeat center/contain;
+  order: 1;
+
+  @include media-breakpoint-up(md) {
+    order: 3;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 9px;
+    width: auto;
+    height: auto;
+    background: transparent;
+    cursor: auto;
+  }
+}
+
+.contact-header__list {
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    @include ul-none();
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contact-header__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1px;
+    height: 27px;
+    transform: rotate(18deg);
+    margin-right: 16px;
+    margin-left: 17px;
+    background: #919eaf;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.contact-header__tel {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #e1b57d;
+  }
+
+  &--black {
+    color: $black;
+  }
+
+  @media(min-width: $screen-sm) {
+    font-size: 16px;
+  }
+}
+
+.contact-header__email {
+  display: none;
+  font-size: 9px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #ccd6e4;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #e1b57d;
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
+  @media(min-width: $screen-sm) {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,161 @@
+.merchandise {
+  padding-bottom: 82px;
+}
+
+.merchandise__row {
+  @include make-row();
+  justify-content: space-between;
+
+  &--ident {
+    margin-bottom: 30px;
+  }
+}
+
+.merchandise__picture {
+  @include make-col-ready();
+  margin-bottom: 30px;
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 420px;
+    flex-basis: 100%;
+  }
+}
+
+.merchandise__picture img {
+  width: 100%;
+}
+
+.merchandise__content {
+  @include make-col-ready();
+  margin-top: -6px;
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(6);
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 751px;
+    flex-basis: 100%;
+  }
+}
+
+.merchandise__left {
+  @include make-col-ready();
+  margin-bottom: 30px;
+
+
+  @include media-breakpoint-up(xl) {
+    max-width: 317px;
+    margin-bottom: 0;
+  }
+}
+
+.merchandise__right {
+  @include make-col-ready();
+
+
+  @include media-breakpoint-up(xl) {
+    max-width: 412px;
+  }
+}
+
+.merchandise__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  color: $black;
+  margin-bottom: 35px;
+}
+
+.merchandise__price {
+  font-size: 22px;
+  font-weight: 400;
+  color: #494949;
+  margin-bottom: 23px;
+}
+
+.merchandise__packing {
+  display: block;
+  margin-bottom: 11px;
+}
+
+.merchandise__price span {
+  position: relative;
+  font-size: 37px;
+  font-weight: 700;
+  color: #dfb47c;
+  padding-right: 28px;
+  margin-right: 2px;
+}
+
+.merchandise__price span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 26px;
+  background: url("../img/icon/icon-rub.svg") no-repeat center/contain;
+}
+
+.merchandise__packing-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 0 11px;
+}
+
+.merchandise__packing-item {
+  min-height: 29px;
+  flex-shrink: 0;
+  padding-right: 20px;
+  margin-right: 17px;
+  border-right: 1px solid #be9b6a;
+
+  &:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+.merchandise__packing-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 21px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.merchandise__packing-text sub {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  bottom: 0;
+}
+
+.merchandise__packing-text span {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.merchandise__btn {
+  width: 100%;
+}
+
+.merchandise__manufact {
+  margin-bottom: 32px;
+}
+
+.merchandise__char-title {
+  margin-bottom: 17px;
+}

@@ -4,21 +4,157 @@ block meta
   title Главная
 block header
   .fullpage
-    +menu()
-    .container.fullpage__container
+    .container.container--xxl
       +page-header()
+    .container
       section.main-block
-        h1.main-block__title Сеть ателье #[span.main-block__size «Винтаж»]
-        p.main-block__tagline Подгонка, ремонт и пошив одежды любой сложности в Уфе
-        form.form-callback
-          label.form-doc.form-doc--tel.form-callback__mb-tel
-            input.form-doc__input(type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required="")
-          button.btn.form-callback__btn Обсудить заказ
+        h1.main-block__title Прямой поставщик
+        p.main-block__tagline технического парафина &laquo;Т-2&raquo; и&nbsp;защитного воска &laquo;ЗВ-П&raquo; с&nbsp;завода-производителя
+        form.form.main-block__form
+          .form__row.main-block__form-row
+            label.field-text.form__field-width
+              input.field-text__input.field-text__input--tel(type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required="")
+            button.btn.btn--warning Обсудить заказ
           label.form-checkbox
             input(type="checkbox" required="" checked)
             span.form-checkbox__check(aria-label="Согласие на обработку данных")
-            span.form-checkbox__text Отправляя данные вы&nbsp;даете свое согласие на&nbsp;обработку персональных данных
+            span.form-checkbox__text Я&nbsp;даю свое согласие на&nbsp;обработку персональных данных
 block content
   main
+    .description(id="about")
+      section.container.description__decor
+        h2.title.title--line.description__title Бесперебойная доставка продукции в&nbsp;заводской упаковке любого объема
+        .description__row
+          .description__content
+            p Текст о компании. Lorem Ipsum является текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета и визуальных макетах.
+            p Проход продолжает видеть частое использование, с Lorem Ipsum текст часто появляются в печати, графических и веб-дизайна
+            p Текст о компании. Lorem Ipsum является текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета и визуальных макетах. Проход продолжает видеть частое
+          .col-lg-6
+            img.description__img-index(src="img/content/img-fura.png" alt="Изображение")
+        ul.advantages
+          li.advantages__column
+            .advantages__item.advantages__item--icon-1
+              p.advantages__text Прямой поставщик Завод «Башнефть новойл»
+          li.advantages__column
+            .advantages__item.advantages__item--icon-2
+              p.advantages__text Индивидуальная цена при объеме от 10 тонн
+          li.advantages__column
+            .advantages__item.advantages__item--icon-3
+              p.advantages__text Удобная логистика, расположение складов
+          li.advantages__column
+            .advantages__item.advantages__item--icon-4
+              p.advantages__text Отгрузка продукции за чертой города (промзона)
+    .popular
+      .container
+        section.popular__center-text
+          h2.title.title--white Популярные товары
+        ul.popular__list
+          li.popular__item-tovar
+            .product
+              .product__picture
+                img.product__img(src="img/content/tovar-1.jpg", alt="Технический парафин «Т-2»")
+                .product__mini-info
+                  p.product__price От #[span 74 000] за тонну
+                  p.product__manufact Производитель: «Башнефть новойл»
+              section.product__info
+                h3.product__title Технический парафин #[span «Т-2»]
+                span.product__packing Варианты фасовки:
+                ul.product__packing-list
+                  li.product__packing-item
+                    p.product__packing-text 22,50 #[sub кг.]
+                  li.product__packing-item
+                    p.product__packing-text 15-16 #[sub кг.]
+                  li.product__packing-item
+                    p.product__packing-text.product__packing-text--size Жидкий #[span (Автоналив)]
+                a.btn.btn--transparent.product__btn(href="single.html") Подробная информация
+                a.btn.btn--warning.product__btn(href="#" data-toggle="modal" data-target="#cost") Уточнить стоимость
+          li.popular__item-tovar
+            .product
+              .product__picture
+                img.product__img(src="img/content/tovar-2.jpg", alt="Технический парафин «Т-2»")
+                .product__mini-info
+                  p.product__price От #[span 72 000] за тонну
+                  p.product__manufact Производитель: «Башнефть новойл»
+              section.product__info
+                h3.product__title Воск защитный #[span «ЗВ-П»]
+                span.product__packing Варианты фасовки:
+                ul.product__packing-list
+                  li.product__packing-item
+                    p.product__packing-text 22,50 #[sub кг.]
+                  li.product__packing-item
+                    p.product__packing-text.product__packing-text--size Жидкий #[span (Автоналив)]
+                a.btn.btn--transparent.product__btn(href="single.html") Подробная информация
+                a.btn.btn--warning.product__btn(href="#" data-toggle="modal" data-target="#cost") Уточнить стоимость
+        section.popular__center-text
+          h2.title.title--white Категории продукции
+        ul.popular__list
+          li.popular__item-category
+            .category
+              img.category__img(src="img/content/tovar-3.jpg", alt="Технический парафин «Т-2»")
+              section.category__info
+                h3.category__title Технический парафин «Т-2»
+                a.btn.btn--transparent.category__btn(href="category.html") Подробней
+          li.popular__item-category
+            .category
+              img.category__img(src="img/content/tovar-3.jpg", alt="Технический парафин «Т-2»")
+              section.category__info
+                h3.category__title Технический парафин «Т-2»
+                a.btn.btn--transparent.category__btn(href="category.html") Подробней
+          li.popular__item-category
+            .category
+              img.category__img(src="img/content/tovar-3.jpg", alt="Технический парафин «Т-2»")
+              section.category__info
+                h3.category__title Технический парафин «Т-2»
+                a.btn.btn--transparent.category__btn(href="category.html") Подробней
+          li.popular__item-category
+            .category
+              img.category__img(src="img/content/tovar-3.jpg", alt="Технический парафин «Т-2»")
+              section.category__info
+                h3.category__title Технический парафин «Т-2»
+                a.btn.btn--transparent.category__btn(href="#") Подробней
+          li.popular__item-category
+            .category
+              img.category__img(src="img/content/tovar-3.jpg", alt="Технический парафин «Т-2»")
+              section.category__info
+                h3.category__title Технический парафин «Т-2»
+                a.btn.btn--transparent.category__btn(href="category.html") Подробней
+          li.popular__item-category
+            .category
+              img.category__img(src="img/content/tovar-3.jpg", alt="Технический парафин «Т-2»")
+              section.category__info
+                h3.category__title Технический парафин «Т-2»
+                a.btn.btn--transparent.category__btn(href="category.html") Подробней
+          li.popular__item-category
+            .category
+              img.category__img(src="img/content/tovar-3.jpg", alt="Технический парафин «Т-2»")
+              section.category__info
+                h3.category__title Технический парафин «Т-2»
+                a.btn.btn--transparent.category__btn(href="category.html") Подробней
+          li.popular__item-category
+            .category
+              img.category__img(src="img/content/tovar-3.jpg", alt="Технический парафин «Т-2»")
+              section.category__info
+                h3.category__title Технический парафин «Т-2»
+                a.btn.btn--transparent.category__btn(href="category.html") Подробней
+    .sertificats
+      section.container
+        h2.title.title--line.sertificats__title Сертификаты соответствия продукции ГОСТ
+      .container.container--slider
+        .sertificats__list.owl-carousel.owl-theme
+          .sertificats__item
+            a.sertificats__picture(href="img/content/sertificat-1.png" data-fancybox="")
+              img(src="img/content/sertificat-1.png", alt="Сертификат")
+          .sertificats__item
+            a.sertificats__picture(href="img/content/sertificat-1.png" data-fancybox="")
+              img(src="img/content/sertificat-1.png", alt="Сертификат")
+          .sertificats__item
+            a.sertificats__picture(href="img/content/sertificat-1.png" data-fancybox="")
+              img(src="img/content/sertificat-1.png", alt="Сертификат")
+          .sertificats__item
+            a.sertificats__picture(href="img/content/sertificat-1.png" data-fancybox="")
+              img(src="img/content/sertificat-1.png", alt="Сертификат")
+          .sertificats__item
+            a.sertificats__picture(href="img/content/sertificat-1.png" data-fancybox="")
+              img(src="img/content/sertificat-1.png", alt="Сертификат")
 block footer
   +page-footer()

@@ -1,0 +1,122 @@
+extends pug/layout.pug
+
+block meta
+  title Категория товаров
+block header
+ .fullpage.fullpage--img-none
+    .container.container--xxl
+      +page-header("page-header--pb")
+    .container
+      .fullpage__row
+        section.main-block
+          h1.main-block__title.main-block__title--size Название категории
+          p.main-block__tagline.main-block__tagline--size #[span (например, Продажа масла)] Краткое описание-дискриптор к&nbsp;категории
+          form.form.main-block__form
+            .form__row.main-block__form-row
+              label.field-text.form__field-width
+                input.field-text__input.field-text__input--tel(type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required="")
+              button.btn.btn--warning Обсудить заказ
+            label.form-checkbox
+              input(type="checkbox" required="" checked)
+              span.form-checkbox__check(aria-label="Согласие на обработку данных")
+              span.form-checkbox__text Я&nbsp;даю свое согласие на&nbsp;обработку персональных данных
+        .price-list
+          img.price-list__img(src="img/content/img-mocap.png", alt="Изображние прайса")
+          a.btn.btn--transparent.price-list__btn(href="#" target="_blank") Скачать прайс
+block content
+  main
+    .description.description--category(id="about")
+      section.container
+        h2.title.title--line.description__title Заголовок текста о&nbsp;продаже масла
+        .description__row.description__row--category
+          .description__content.description__content--width
+            p Текст о продаже масла. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus ex sit amet enim laoreet, ut vehicula magna accumsan. Sed efficitur sit amet tellus hendrerit dictum. Cras viverra dolor ut mi tincidunt molestie.
+            p Sed finibus luctus odio quis egestas. In ligula est, consectetur ut auctor ut, facilisis eu quam. Donec porttitor nisi erat, non rutrum ipsum semper eu. Suspendisse aliquam maximus nisl. Cras sit amet urna maximus, tincidunt
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus ex sit amet enim laoreet, ut vehicula magna accumsan. Sed efficitur sit amet tellus hendrerit dictum. Cras viverra dolor ut mi tincidunt molestie.
+          .col-lg-6
+            img.description__img(src="img/content/img-content.jpg" alt="Изображение")
+        ul.advantages
+          li.advantages__column
+            .advantages__item.advantages__item--icon-1
+              p.advantages__text Прямой поставщик Завод «Башнефть новойл»
+          li.advantages__column
+            .advantages__item.advantages__item--icon-2
+              p.advantages__text Индивидуальная цена при объеме от 10 тонн
+          li.advantages__column
+            .advantages__item.advantages__item--icon-3
+              p.advantages__text Удобная логистика, расположение складов
+          li.advantages__column
+            .advantages__item.advantages__item--icon-4
+              p.advantages__text Отгрузка продукции за чертой города (промзона)
+    .popular.popular--gray
+      .container
+        ul.popular__list
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+          li.popular__item-category
+            a.category.category--ident-buttom(href="single.html")
+              img.category__picture(src="img/content/tovar-4.jpg", alt="Технический парафин «Т-2»")
+              section.category__name
+                h3.category__title.category__title--white Технический парафин «Т-2»
+        +pagination()
+          +pagination-item('Назад', '#', false, "arrow-prev")
+          +pagination-item('1', '#', true)
+          +pagination-item('2', '#')
+          +pagination-item('3', '#')
+          +pagination-item('4', '#')
+          +pagination-item('Вперед', '#', false, "arrow-next")
+block footer
+  +page-footer()
