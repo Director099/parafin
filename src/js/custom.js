@@ -29,6 +29,13 @@ $(document).ready(function() {
         $("body").css("overflow", "auto");
       })
     }
+
+    if (windowWidth >= 768) {
+      $(".menu__navigation-item").hover(function() {
+        $(".menu__navigation-item").removeClass("menu__navigation-item--active")
+        $(this).addClass("menu__navigation-item--active");
+      });
+    }
 });
 
 // Плавный скол с навигации

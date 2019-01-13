@@ -164,6 +164,11 @@
   }
 }
 
+.menu__navigation-item--active .menu__navigation-drop {
+  display: block;
+  opacity: 1;
+}
+
 @media(min-width: $screen-md) {
   .menu__navigation-item:hover > .menu__navigation-drop {
     opacity: 1;
