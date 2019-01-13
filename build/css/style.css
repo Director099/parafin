@@ -3068,6 +3068,11 @@ img {
     background: #f4f4f4;
 }
 
+.menu__navigation-item--active .menu__navigation-drop {
+    display: block;
+    opacity: 1;
+}
+
 .menu__navigation-link {
     display: inline-block;
     width: 100%;
